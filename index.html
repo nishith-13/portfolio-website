@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Nishith Limbasiya - Portfolio</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Nishith</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+                  <li>
+                     <a href="#work" class="nav__link">Work</a>
+                  </li>
+                  <li>
+                     <a href="#info" class="nav__link">My Info</a>
+                  </li>
+                  <li>
+                     <a href="#services" class="nav__link">Services</a>
+                  </li>
+                  <li>
+                     <a href="#contact" class="nav__link">Contact Me</a>
+                  </li>
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+      
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <img src="assets/img/home-perfil.png" alt="Nishith's profile image" class="home__img">
+               <div class="home__data">
+                  <h1 class="home__name"> Nishith <br> Limbasiya</h1>
+                  <h3 class="home__profession">Software Engineer</h3>
+               </div>
+               <a href="#work" class="home__scroll">
+                  <div class="home__scroll-box">
+                     <i class="ri-arrow-down-line"></i>
+                  </div>
+                  <span class="home__scroll-text">Recent Works</span>
+               </a>
+            </div>
+         </section>
+
+         <!--==================== WORKS ====================-->
+         <section class="work section" id="work">
+            <h2 class="section__title">RECENT WORKS</h2>
+            <div class="work__container container grid">
+               <article class="work__card">
+                  <div class="work__link">
+                     <h2 class="work__title">Content Management System (CMS) for e-Learning Platform</h2>
+                     <p class="work__description read-more">
+                        A CMS is a platform used to create, manage, and organize educational content, such as text, videos, and documents, for easy access and distribution. As a software developer, I played a key role in maintaining a scalable CMS website for an e-learning platform. This involved improving content delivery, and interactive functionalities for instructors and learners. I implemented numerous features, authored unit tests, and enhanced the website's quality and performance by resolving critical bugs, all while operating within an Agile framework. 
+                     </p>
+                     <button onclick="myFunction(event)" class="myBtn">Read More</button>
+                     <img src="assets/img/cms.png" alt="image" class="work__img">
+                  </div>
+               </article>
+               <article class="work__card">
+                  <div class="work__link">
+                     <h2 class="work__title">Learning Management System (LMS) for e-Learning Platform</h2>
+                     <p class="work__description read-more">
+                        An LMS is a platform designed to deliver, manage, and track educational content and learner progress in a structured learning environment. I was instrumental in the developing and optimization of LMS website, facilitating the smooth integration of Google Classroom into the platform, user management, and utilizing third-party libraries to improve functionality and performance. My efforts were pivotal in creating a cohesive and interactive learning experience for administrators and students alike. I developed 50+ user stories, 180+ bugs and few enhancement in Agile framework. 
+                     </p>
+                     <button onclick="myFunction(event)" class="myBtn">Read More</button>
+                     <img src="assets/img/lms.png" alt="image" class="work__img">
+                  </div>
+               </article>
+               <!-- <article class="work__card">
+                  <div class="work__link">
+                     <h2 class="work__title">Personal Blogging website</h2>
+                     <p class="work__description read-more">
+                        A personal blogging website where I share my thoughts, experiences, and creative insights on topics ranging from lifestyle and travel to personal growth and everyday musings.
+                     </p>
+                     <button onclick="myFunction(event)" class="myBtn">Read More</button>
+                     <img src="assets/img/work-1.jpg" alt="image" class="work__img">
+                  </div>
+               </article> -->
+            </div>
+         </section>
+
+         <!--==================== INFO ====================-->
+         <section class="info section" id="info">
+            <h2 class="section__title">MY INFO</h2>
+            <div class="info__container container grid">
+               <div class="about grid">
+                  <div class="about__content">
+                     <h3 class="info__title">About Me</h3>
+                     <p class="about__description">
+                        Passionate Software Engineer | Skilled in C++ and Python | Full Stack Developer | Seeking Opportunities to Build Innovative Solutions | I Graduated in Computer Science with a CGPA of 8.88 from GCET College (G H Patel College of Engineering and Technology).
+                     </p>
+                     <a href="assets/pdf/Nishith's_resume.pdf" download="" target="_blank" class="button about__button">Download CV</a>
+                  </div>
+                  
+                  <img src="assets/img/info-perfil.png" alt="image" class="about__img">
+               </div>
+               <div class="experience">
+                  <h3 class="info__title">Experience</h3>
+                  <div class="experience__content grid">
+                     <div class="experience__data grid">
+                        <h2 class="experience__company">Zeus Learning</h2>
+                        <div>
+                           <h3 class="experience__profession">Software Engineer</h3>
+                           <span class="experience__date">Jan, 2023 - Present</span>
+                           <p class="experience__description">
+                              Worked across 3 projects in Agile Framework.
+                              Implemented 50+ features using Angular Material library and solved 180+ bugs.
+                              Wrote several REST APIs and integrated it to the front-end.
+                              Wrote several stored procedures in mySQl.
+                              Worked with ElasticSearch.
+                              Wrote several unit tests for In-house project of the company.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="experience__data grid">
+                        <h2 class="experience__company">Chegg India</h2>
+                        <div>
+                           <h3 class="experience__profession">Chegg Expert</h3>
+                           <span class="experience__date">Oct, 2020 - Jan, 2023</span>
+                           <p class="experience__description">
+                              Academic assistance and tutoring services to students worldwide.
+                              Offered 33 accurate solutions across various subjects.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="experience__data grid">
+                        <h2 class="experience__company">System Level Solutions</h2>
+                        <div>
+                           <h3 class="experience__profession">Machine Learning intern</h3>
+                           <span class="experience__date">Apr, 2022 - Aug, 2022</span>
+                           <p class="experience__description">
+                              Gained hands-on experience in data analysis, preprocessing, model development, and evaluation, contributing to various stages of the machine learning pipeline.
+                              Developed skills in data exploration, algorithm implementation, and presenting findings, while collaborating effectively within a team.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="experience__data grid">
+                        <h2 class="experience__company">Quadio Labs</h2>
+                        <div>
+                           <h3 class="experience__profession">Debug Technician</h3>
+                           <span class="experience__date">Jan, 2022 - APr, 2022</span>
+                           <p class="experience__description">
+                              Debugging & Testing Mobile App built using C.
+                              Worked closely with the development team to troubleshoot issues and provide actionable feedback.
+                              Improved problem-solving abilities and gained insights into mobile development challenges.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="skills">
+                  <h3 class="info__title">Skills</h3>
+                  <div class="skills__content grid">
+                     <div class="skills__box">
+                        <img src="assets/img/angular-icon.svg" alt="Angular" class="skills__img">
+                        <span class="skills__name">Angular</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/django.svg" alt="django" class="skills__img">
+                        <span class="skills__name">django</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/dot-net-core.svg" alt="dot net" class="skills__img">
+                        <span class="skills__name">.Net</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/c.svg" alt="C" class="skills__img">
+                        <span class="skills__name">C</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/c++.svg" alt="C++" class="skills__img">
+                        <span class="skills__name">C++</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/csharp.svg" alt="C#" class="skills__img">
+                        <span class="skills__name">C#</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/python.svg" alt="Python" class="skills__img">
+                        <span class="skills__name">Python</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/typescript.svg" alt="TypeScript" class="skills__img">
+                        <span class="skills__name">TypeScript</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/info-javascript.svg" alt="JavaScript" class="skills__img">
+                        <span class="skills__name">JavaScript</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/mysql.svg" alt="MySQL" class="skills__img">
+                        <span class="skills__name">MySQL</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/redis.svg" alt="Redis" class="skills__img">
+                        <span class="skills__name">Redis</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/info-html.svg" alt="HTML" class="skills__img">
+                        <span class="skills__name">HTML</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/info-css.svg" alt="CSS" class="skills__img">
+                        <span class="skills__name">CSS</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/info-sass.svg" alt="Sass" class="skills__img">
+                        <span class="skills__name">Sass</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/info-git.svg" alt="Git" class="skills__img">
+                        <span class="skills__name">Git</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/info-github.svg" alt="GitHub" class="skills__img">
+                        <span class="skills__name">GitHub</span>
+                     </div>
+                     <div class="skills__box">
+                        <img src="assets/img/visual-studio-code.svg" alt="Visual Studio Code" class="skills__img">
+                        <span class="skills__name">Visual Studio Code </span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="skills">
+                  <h3 class="info__title">Where I Code</h3>
+                  <div class="skills__content grid">
+                     <a href="https://leetcode.com/u/nishith_limbasiya/" target="_blank" class="contact__social-link">
+                        <img src="assets/img/leetcode.svg" alt="LeetCode" class="skills__img">
+                        <span>LeetCode</span>
+                     </a>
+                     <a href="https://www.hackerearth.com/@Nishith_13/" target="_blank" class="contact__social-link">
+                        <img src="assets/img/hackerearth.svg" alt="HackerEarth" class="skills__img">
+                        <span>HackerEarth</span>
+                     </a>
+                     <a href="https://www.hackerrank.com/profile/nlimbasiya13" target="_blank" class="contact__social-link">
+                        <img src="assets/img/hackerrank.svg" alt="HackerRank" class="skills__img">
+                        <span>HackerRank</span>
+                     </a>
+                     <a href="https://www.codechef.com/users/nishith_1_3" target="_blank" class="contact__social-link">
+                        <img src="assets/img/codechef.svg" alt="CodeChef" class="skills__img">
+                        <span>CodeChef</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h2 class="section__title">SERVICES</h2>
+            <div class="sevices__container container grid">
+               <article class="services__card">
+                  <i class="ri-code-box-line services__icon"></i>
+                  <h3 class="services__title">Website Development</h3>
+                  <p class="services__description">
+                     I specialize in crafting high-quality, custom websites tailored to your unique business needs, while keeping in mind performance and scalability.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-code-box-line services__icon"></i>
+                  <h3 class="services__title">Front-end Refactoring and Optimization</h3>
+                  <p class="services__description">
+                     I specialize in enhancing website performance and user experience through front-end code refactoring, optimization techniques, and best practices.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-code-box-line services__icon"></i>
+                  <h3 class="services__title">Uncover and Conquer: Expert Debugging Services</h3>
+                  <p class="services__description">
+                     I specialize in resolving complex software bugs, ensuring your applications run smoothly and efficiently.
+                  </p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">CONTACT ME</h2>
+            <div class="contact__container container grid">
+               <form name="submit-to-google-sheet" action="" class="contact__form grid" id="contact-form">
+                  <div class="contact__group grid">
+                     <input type="text" name="visitor_name" placeholder="Name" required class="contact__input">
+                     <input type="email" name="visitor_email" placeholder="Email" required class="contact__input">
+                  </div>
+
+                  <textarea placeholder="Message" name="visitor_message" required class="contact__input contact__area"></textarea>
+                  
+                  <p class="contact__messsage" id="contact-message"></p>
+
+                  <button type="submit" class="button contact__button">Send Message</button>
+               </form>
+
+               <div class="contact__social grid">
+                  <a href="https://in.linkedin.com/in/spartan13" target="_blank" class="contact__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                     <span>Linkedin</span>
+                  </a>
+                  <a href="https://twitter.com/NAL_void" target="_blank" class="contact__social-link">
+                     <i class="ri-twitter-x-line"></i>
+                     <span>X</span>
+                  </a>
+                  <a href="https://www.instagram.com/nishith_limbasiya/" target="_blank" class="contact__social-link">
+                     <i class="ri-instagram-line"></i>
+                     <span>instagram</span>
+                  </a>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#home" class="footer__link">Home</a>
+               </li>
+               <li>
+                  <a href="#work" class="footer__link">Work</a>
+               </li>
+               <li>
+                  <a href="#info" class="footer__link">Info</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">&#169; All Rights Reserved By Nishith</span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
