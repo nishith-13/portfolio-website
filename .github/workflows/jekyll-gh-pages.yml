@@ -29,11 +29,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Use secret
-        env:
-          SCRIPT_URL: ${{ secrets.SCRIPT_URL }}
         run: |
           echo "Injecting Google Script URL"
           SCRIPT_URL=${{ secrets.SCRIPT_URL }}
+          echo "Using Google Script URL: $GOOGLE_SCRIPT_URL"
           sed -i 's|{{SCRIPT_URL}}|'$SCRIPT_URL'|g' assets/js/main.js
       - name: Setup Pages
         uses: actions/configure-pages@v5
