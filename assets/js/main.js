@@ -99,7 +99,7 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(() => {
             contactMessage.textContent = 'Message sent successfully ✅'
-
+            console.log(scriptURL);
             setTimeout(() => {
                 contactMessage.textContent = ''
             }, 5000)
