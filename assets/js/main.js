@@ -96,11 +96,9 @@ const contactMessage = document.getElementById('contact-message')
 form.addEventListener('submit', e => {
     e.preventDefault();
     contactMessage.textContent = 'Sending...';
-    console.log(scriptURL);
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(() => {
-            contactMessage.textContent = 'Message sent successfully ✅'
-            console.log(scriptURL);
+            contactMessage.textContent = 'Message sent successfully ✅';
             setTimeout(() => {
                 contactMessage.textContent = ''
             }, 5000)
