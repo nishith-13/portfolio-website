@@ -87,7 +87,7 @@ sr.reveal(`.work__card, .services__card`, { interval: 100 })
 sr.reveal(`.about__content`, { origin: 'right' })
 sr.reveal(`.about__img`, { origin: 'left' })
 
-const scriptURL = ''
+const scriptURL = process.env.MY_SECRET_KEY
 const form = document.forms['submit-to-google-sheet']
 
 const contactForm = document.getElementById('contact-form')
