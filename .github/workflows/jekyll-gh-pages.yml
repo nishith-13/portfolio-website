@@ -32,7 +32,9 @@ jobs:
         env:
           SCRIPT_URL: ${{ secrets.SCRIPT_URL }}
         run: |
-          echo "My secret is: $SCRIPT_URL"
+          echo "Injecting Google Script URL"
+          SCRIPT_URL=${{ secrets.SCRIPT_URL }}
+          sed -i 's|{{SCRIPT_URL}}|'$SCRIPT_URL'|g' main.js
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
