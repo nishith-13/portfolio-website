@@ -93,26 +93,33 @@ const form = document.forms['submit-to-google-sheet']
 const contactForm = document.getElementById('contact-form')
 const contactMessage = document.getElementById('contact-message')
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', e => handleFormSubmission(e));
+
+async function handleFormSubmission(e) {
     e.preventDefault();
-    contactMessage.textContent = 'Sending...';
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(() => {
-            contactMessage.textContent = 'Message sent successfully ✅';
-            setTimeout(() => {
-                contactMessage.textContent = ''
-            }, 5000)
 
-            contactForm.reset()
-        })
-        .catch(() => {
-            contactMessage.textContent = 'Message not sent (service error) ❌'
+    const showMessage = (message, isError = false) => {
+        contactMessage.textContent = message;
+        const timeoutDuration = 5000;
+        setTimeout(() => {
+            contactMessage.textContent = '';
+        }, timeoutDuration);
 
-            setTimeout(() => {
-                contactMessage.textContent = ''
-            }, 5000)
-        })
-})
+        if (isError) {
+            console.error('Error:', message);
+        }
+    };
+
+    try {
+        showMessage('Sending...');
+        await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
+        showMessage('Message sent successfully ✅');
+    } catch (error) {
+        showMessage('Message not sent (service error) ❌', true);
+    } finally {
+        contactForm.reset();
+    }
+}
 
 function myFunction(event) {
     var module = event.target;
